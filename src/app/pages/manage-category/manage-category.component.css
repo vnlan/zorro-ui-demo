@@ -1,0 +1,176 @@
+.header{
+  background: white;
+  padding: 0;
+}
+nz-breadcrumb{
+  padding: 0;
+}
+.padd{
+  padding-top: 1.2%;
+  padding-left: 1%;
+}
+nz-content {
+  background: white;
+  font-family: "Roboto", Arial;
+}
+.title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 0px;
+  padding:0px;
+}
+.main{
+  color: #0D2D5E !important;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.layout {
+  min-height: 100vh;
+}
+.red{
+  color: red;
+}
+.label-text {
+  margin-bottom: 7px;
+}
+.w90{
+  width: 90% !important;
+}
+nz-content input {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border-radius: 4px;
+  border-color: #e2e2e2;
+  box-shadow: none;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+nz-select {
+  width: 100%;
+  height: 34px;
+
+  font-size: 14px;
+
+  color: #555;
+
+  line-height: 1.42857143;
+  border-radius: 5px;
+}
+.btn-search{
+  background: #CB7300;
+  color: #fff;
+  font-size: 14px;
+}
+.btn-line-blue {
+  background: none;
+  border-color: #2572CD;
+  color: #2572CD;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+.btn-line-blue:hover{
+  background-color: #2572CD;
+  color :white;
+}
+
+.table-content {
+  overflow: auto;
+  margin-bottom: 20px;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Roboto", Arial;
+}
+.table-result {
+  width: 100%;
+  text-align: justify;
+}
+.table-result th {
+
+  white-space: nowrap;
+  font-weight: 500;
+  background: #FAEBCC;
+  padding: 10px 10px !important;
+  vertical-align: top;
+  border: 0px !important;
+}
+.center {
+  text-align: center;
+}
+.link {
+  color: #2A6EBB;
+}
+.thick {
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+}
+.table-result td {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  border-bottom: 1px solid #E9F0F8 !important;
+  padding: 10px 10px !important;
+  vertical-align: top;
+
+}
+.ant-pagination-item{
+  color: #CB7300;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+/*.form-control{*/
+/*  display: block;*/
+/*  width: 100%;*/
+/*  height: 34px;*/
+/*  padding: 6px 12px;*/
+/*  font-size: 14px;*/
+/*  line-height: 1.42857143;*/
+/*  color: #555;*/
+/*  background-color: #fff;*/
+/*  background-image: none;*/
+/*  border: 1px solid #ccc;*/
+/*  border-radius: 4px;*/
+/*}*/
+.head-example {
+  width: 42px;
+  height: 42px;
+  border-radius: 4px;
+  background: #eee;
+  display: inline-block;
+  vertical-align: middle;
+}
+nz-badge{
+  margin-top: 30%;
+}
+.user{
+  margin-top: 3%;
+}
+.noti{
+  font-size: 28px;
+  color: #B1B3BD;
+}
+.fr{
+  float: right;
+}
+.username{
+  font-weight: 500;
+  font-size: 15px;
+  max-width: 150px;
+  margin-left: 8%;
+}

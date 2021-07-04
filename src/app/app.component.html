@@ -1,0 +1,47 @@
+<nz-layout class="layout">
+  <nz-sider nzWidth="16%" >
+    <div nz-row class="logo">
+      <div nz-col nzSpan="5" ><img  src="assets/img/header/logo.png"></div>
+        <div nz-col nzOffset = "1" nzSpan="18">
+          <div nz-row  class="header-title"> TỔNG CỤC ĐƯỜNG BỘ VIỆT NAM</div>
+          <div nz-row  class="header-sologan">CỔNG DỊCH VỤ CÔNG TRỰC TUYẾN</div>
+        </div>
+
+
+    </div>
+    <ul nz-menu nzTheme="dark" nzMode="inline" class="sider-menu">
+      <a nz-menu-item>
+        <i nz-icon nzType="home" nzTheme="fill"></i>
+        <span>Trang chủ</span>
+      </a>
+      <li nz-submenu nzIcon="solution" nzTitle="Hồ sơ đổi GPLX">
+        <ul>
+          <a nz-menu-item>Hồ sơ chờ xử lý</a>
+          <a nz-menu-item>Hồ sơ đã xử lý</a>
+        </ul>
+      </li>
+      <a nz-menu-item>
+        <i nz-icon nzType="file"></i>
+        <span>Hồ sơ cấp mới GPLX</span>
+      </a>
+      <a nz-menu-item>
+        <i nz-icon nzType="usergroup-add"></i>
+        <span>Quản lý tài khoản</span>
+      </a>
+      <a nz-menu-item  routerLink="/quan-ly-danh-muc">
+        <i nz-icon nzType="appstore"></i>
+        <span>Quản lý danh mục</span>
+      </a>
+    </ul>
+  </nz-sider>
+
+  <nz-layout class="right-layout">
+    <nz-content>
+      <router-outlet></router-outlet>
+
+    </nz-content>
+
+  </nz-layout>
+
+</nz-layout>
+

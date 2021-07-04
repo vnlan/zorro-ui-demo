@@ -1,0 +1,163 @@
+<nz-layout class="layout">
+
+<div nz-row class="header">
+  <div nz-col nzSpan="12" class="padd">
+    <div nz-row class="title"> Danh mục cơ quan</div>
+    <div nz-row>
+      <nz-breadcrumb>
+        <nz-breadcrumb-item>
+          Home
+        </nz-breadcrumb-item>
+        <nz-breadcrumb-item>
+          <a>Application List</a>
+        </nz-breadcrumb-item>
+        <nz-breadcrumb-item>
+          An Application
+        </nz-breadcrumb-item>
+      </nz-breadcrumb>
+    </div>
+  </div>
+  <div nz-col nzSpan="12">
+
+    <div nz-row nzJustify="end">
+     <div nz-col nzSpan="3">
+       <nz-badge nzDot class="noti "><i nz-icon nzType="bell"></i></nz-badge>
+     </div>
+      <div nz-col nzSpan="9" nzOffset="-12" class="user">
+        <nz-avatar [nzSize]="42" nzIcon="user"></nz-avatar>
+        <span class="username">Nguyễn Nhật Lân</span>
+      </div>
+    </div>
+
+
+  </div>
+  <nz-divider></nz-divider>
+</div>
+
+
+
+
+  <nz-content>
+    <div nz-row nzJustify="center">
+      <div nz-col nzSpan="23">
+        <div nz-row class="title main">Thông tin tìm kiếm</div>
+        <div nz-row class="label-text">Tên đơn vị &nbsp;<span class="red"> * </span></div>
+        <div nz-row><input nz-input placeholder="Nhập tên đơn vị"/></div>
+        <div nz-row [nzGutter]="24" class="label-text">
+          <div nz-col nzSpan="12" class="gutter-row">Mã đơn vị &nbsp;<span class="red"> * </span></div>
+          <div nz-col nzSpan="12" class="gutter-row">Trạng thái &nbsp;</div>
+
+        </div>
+        <div nz-row [nzGutter]="24">
+          <div nz-col nzSpan="12" class="gutter-row"><input nz-input placeholder="Nhập tên đơn vị"/></div>
+          <div nz-col nzSpan="9" class="gutter-row">
+            <nz-select ngModel="lucy">
+              <nz-option [nzLabel]="'Tất cả'" nzValue="jack"></nz-option>
+            </nz-select>
+          </div>
+          <div nz-col nzSpan="2">
+            <button class="btn-search" nz-button nzType="default"><i nz-icon nzType="search"></i>Tìm kiếm</button>
+          </div>
+
+        </div>
+        <nz-divider></nz-divider>
+        <div nz-row>
+          <div nz-col nzSpan="20" class="title main">Tìm thấy 100 kết quả</div>
+          <div nz-col nzSpan="4">
+
+            <div nz-row nzJustify="end">
+              <button nz-button nzType="default" class="btn-line-blue" (click)="showModal()"><i nz-icon nzType="plus"></i>Thêm mới</button>
+            </div>
+
+            <nz-modal [(nzVisible)]="isVisible" nzTitle="The first Modal" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+              <ng-container *nzModalContent>
+                <p>Content one</p>
+                <p>Content two</p>
+                <p>Content three</p>
+              </ng-container>
+            </nz-modal>
+          </div>
+        </div>
+        <div nz-row class="table-content">
+          <table class="table-result">
+            <thead>
+            <tr>
+              <th style="width: 30px;" class="center">STT</th>
+              <th> Mã đơn vị</th>
+              <th> Tên đơn vị</th>
+              <th> Tình trạng</th>
+              <th class="center">Thao tác</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td class="center">1</td>
+              <td><a href="#" class="link thick">1223232</a></td>
+              <td>Tổng cục đường bộ</td>
+              <td>
+                <span class="status -success">Sử dụng</span>
+              </td>
+              <td class="center">
+                <a href="#" class="second">
+                  <span class="-ap icon icon-uniF11A"></span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="center">1</td>
+              <td><a href="#" class="link thick">1223232</a></td>
+              <td>Tổng cục đường bộ</td>
+              <td>
+                <span class="status -success">Sử dụng</span>
+              </td>
+              <td class="center">
+                <a href="#" class="second">
+                  <span class="-ap icon icon-uniF11A"></span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="center">1</td>
+              <td><a href="#" class="link thick">1223232</a></td>
+              <td>Tổng cục đường bộ</td>
+              <td>
+                <span class="status -success">Sử dụng</span>
+              </td>
+              <td class="center">
+                <a href="#" class="second">
+                  <span class="-ap icon icon-uniF11A"></span>
+                </a>
+              </td>
+            </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <div nz-row>
+          <div nz-col nzSpan="12" >
+            <div >
+              Hiển thị
+
+                <select name="" id="" class="form-control">
+                  <option value="">10</option>
+                </select>
+
+              trên tổng số 100
+            </div>
+          </div>
+
+
+          <div nz-col nzSpan="12">
+
+            <div nz-row nzJustify="end">
+              <nz-pagination [nzPageIndex]="1" [nzTotal]="500"></nz-pagination>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </nz-content>
+</nz-layout>
